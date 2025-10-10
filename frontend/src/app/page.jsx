@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 
 
@@ -14,10 +15,10 @@ export default async function Home() {
 <div id="carouselExample" className="carousel slide">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="/imagens/Banner.png" className="d-block w-100" alt="..." />
+      <Link href="#produtos" ><img src="/imagens/Banner.png" className="d-block w-100" alt="..." /></Link>
     </div>
     <div className="carousel-item">
-      <img src="/imagens/Banner2.png" className="d-block w-100" alt="..." />
+    <Link href="#produtos" ><img src="/imagens/Banner2.png" className="d-block w-100" alt="..." /></Link>
     </div>
   
   </div>
@@ -43,7 +44,7 @@ export default async function Home() {
 
       <div className="container my-5">
         <h1 className="text-center">Produtos Em Destaque</h1>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 justify-content-center" id="produtos">
           {produtos.map((produto) => (
             <div key={produto.id} className="col-12 col-sm-6 col-md-4 col-lg-4" style={{ maxWidth: "350px" }}>
               <div className="card h-100 shadow-sm border-0 rounded-4">
