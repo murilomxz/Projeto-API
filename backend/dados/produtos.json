@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "produto": "Talabarte de Posicionamento em Corda Steelflex - Mod. STF-CQTL0548",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/57/3657_talabarte-de-posicionamento-em-corda-steelflex-mod-stf-cqtl0548-1311-1_z2_637925443270398638.webp",
+    "descricao": "Talabarte de segurança de posicionamento, confeccionado em corda de 14mm em poliamida com proteção sintética e regulador em aço, ideal para trabalho em altura.",
+    "preco": 170
+  },
+  {
+    "id": 2,
+    "produto": "Cinto Paraquedista 4 Pontos Steelflex Antichamas - Mod. STF-CQCT4321",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/35/89/3589_cinto-paraquedista-4-pontos-steelflex-antichamas-mod-stf-cqct4321-837193-1_z2_638924228363764847.webp",
+    "descricao": "Cinto de segurança tipo paraquedista com cinco pontos de conexão, ideal para trabalhos em altura e espaços confinados. Fabricado em poliéster de alta resistência.",
+    "preco": 295
+  },
+  {
+    "id": 3,
+    "produto": "Capacete de Segurança Steelflex Turtle Aba Frontal Azul Escuro - Com 10 Unidades",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/90/98/9098_casco-turtle-capacete-de-seguranca-steelflex-aba-frontal-azul-escuro-steelflex-mod-stf-cpct10220-com-10-unidades_m1_638230516703828760.webp",
+    "descricao": "Capacete de segurança para uso na indústria, tipo II, Classe B, incluindo trabalhos com energia elétrica. Projetado em conjunto com a suspensão, para limitar o risco de objetos que podem cair sobre a cabeça, reduzindo a força de impacto e penetração na parte superior do casco, de acordo com a norma NBR 8221:2003.",
+    "preco": 524.33
+  },
+  {
+    "id": 4,
+    "produto": "Trava Quedas Retrátil 5m - Carbografite",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/11/22/11220_trava-quedas-retratil-duplo-steelflex_m3_638878499520454100.webp",
+    "descricao": "Trava quedas retrátil com fita de 5 metros, carcaça em ABS e mosquetão de aço. Permite movimentação livre e bloqueio automático em caso de queda.",
+    "preco": 890
+  },
+  {
+    "id": 5,
+    "produto": "Corda de Segurança Poliamida 12MM Rolo C/50M NR18 - Plasmodia",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/15/3615_corda-de-seguranca-poliamida-12mm-rolo-c-50m-nr18-plasmodia-1215-1_m1_637911002040050669.webp",
+    "descricao": "Constituído em trançado triplo e alma central. Trançado externo em multiflamento de Poliamida, trançado intermediário e o alerta visual na cor amarela em multiflamento de polipropileno ou poliamida na cor amarela com o mínimo de 50% de identificação, não podendo ultrapassar 10% da densidade linear. Trançado interno em multiflamento de poliamida e alma central torcida em multifilamento de poliamida.",
+    "preco": 213.40
+  },
+  {
+    "id": 6,
+    "produto": "Cinto Paraquedista Athenas 4 Pontos com Regulagem Total AT7030 com Refletivo",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/03/3603_cinto-paraquedista-athenas-4-pontos-com-regulagem-total-at7030-com-refletivo-835502-1_s3_638924306032089953.webp",
+    "descricao": "Trabalho em altura na retenção de queda, posicionamento e suspensão (espaço confinado).",
+    "preco": 210
+  }
+]
