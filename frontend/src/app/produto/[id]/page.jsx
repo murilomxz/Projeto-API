@@ -11,8 +11,9 @@ export default function Produto() {
   useEffect(() => {
     fetch("http://localhost:3000/produtos")
       .then((res) => res.json())
-      .then((data) => setProduto(data.find(p => p.id === Number(id))));
-  }, [id]);
+      .then((data) => setProduto(data[id]));
+  }, []);
+
 
   if (!produto) return <p>Carregando...</p>;
 

@@ -1,40 +1,30 @@
-"use client"
-
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from "next/link";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+
 
 export default async function Home() {
   const produtos = await (await fetch("http://localhost:3000/produtos")).json();
   console.log(produtos);
 
+
   return (
     <>
-<div
-  id="carouselExampleAutoplaying"
-  className="carousel slide"
-  data-bs-ride="carousel"
->
-  <div className="carousel-inner " >
+<div id="carouselExample" className="carousel slide">
+  <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="/imagens/Banner.png" className="d-block w-100" alt="..." style={{ objectFit: 'cover',
-        maxHeight: "600px"
-       }}
-      />
+      <img src="/imagens/Banner.png" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..." />
+      <img src="/imagens/Banner2.png" className="d-block w-100" alt="..." />
     </div>
-    <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..." />
-    </div>
+  
   </div>
   <button
     className="carousel-control-prev"
     type="button"
-    data-bs-target="#carouselExampleAutoplaying"
+    data-bs-target="#carouselExample"
     data-bs-slide="prev"
   >
     <span className="carousel-control-prev-icon" aria-hidden="true" />
@@ -43,7 +33,7 @@ export default async function Home() {
   <button
     className="carousel-control-next"
     type="button"
-    data-bs-target="#carouselExampleAutoplaying"
+    data-bs-target="#carouselExample"
     data-bs-slide="next"
   >
     <span className="carousel-control-next-icon" aria-hidden="true" />
@@ -51,11 +41,11 @@ export default async function Home() {
   </button>
 </div>
 
-    
       <div className="container my-5">
+        <h1 className="text-center">Produtos Em Destaque</h1>
         <div className="row g-4 justify-content-center">
           {produtos.map((produto) => (
-            <div key={produto.id} className="col-12 col-sm-6 col-md-4 col-lg-4"  style={{ maxWidth: "350px" }}>
+            <div key={produto.id} className="col-12 col-sm-6 col-md-4 col-lg-4" style={{ maxWidth: "350px" }}>
               <div className="card h-100 shadow-sm border-0 rounded-4">
                 <div className="ratio ratio-1x1">
                   <img
@@ -76,15 +66,16 @@ export default async function Home() {
                     R$ {Number(produto.preco).toFixed(2)}
                   </p>
 
-                  <button  className="btn w-100 mt-auto " style={{backgroundColor: "#000000"
-                  }}><Link 
-                  href={`produto/${produto.id}`} 
-                  className="btn w-100 mt-auto fw-bold" 
-                  style={{ backgroundColor: "#000000", color: "#FF7A30" }}
-                >
-                  Comprar
-                </Link>
-                </button>
+
+                  <button
+                    className="btn w-100 mt-auto fw-bold"
+                    style={{ backgroundColor: "#000000", color: "#FF7A30" }}
+                   
+                  >
+                    Comprar
+                  </button>
+
+
                 </div>
               </div>
             </div>

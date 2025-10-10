@@ -1,14 +1,11 @@
 "use client"
 
 import Link from "next/link";
-import { useEffect } from "react";
+
 
 
 export default function Navbar() {
-    useEffect(() => {
-        
-        require("bootstrap/dist/js/bootstrap.min.js");
-      }, []);
+
 
 
   return (
