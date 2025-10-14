@@ -12,35 +12,35 @@ export default async function Home() {
 
   return (
     <>
-<div id="carouselExample" className="carousel slide">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <Link href="#produtos" ><img src="/imagens/Banner.png" className="d-block w-100" alt="..." /></Link>
-    </div>
-    <div className="carousel-item">
-    <Link href="#produtos" ><img src="/imagens/Banner2.png" className="d-block w-100" alt="..." /></Link>
-    </div>
-  
-  </div>
-  <button
-    className="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExample"
-    data-bs-slide="prev"
-  >
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button
-    className="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExample"
-    data-bs-slide="next"
-  >
-    <span className="carousel-control-next-icon" aria-hidden="true" />
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
+      <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <Link href="#produtos" ><img src="/imagens/Banner.png" className="d-block w-100" alt="..." /></Link>
+          </div>
+          <div className="carousel-item">
+            <Link href="#produtos" ><img src="/imagens/Banner2.png" className="d-block w-100" alt="..." /></Link>
+          </div>
+
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <div className="container my-5">
         <h1 className="text-center">Produtos Em Destaque</h1>
@@ -68,13 +68,10 @@ export default async function Home() {
                   </p>
 
 
-                  <button
-                    className="btn w-100 mt-auto fw-bold"
-                    style={{ backgroundColor: "#000000", color: "#FF7A30" }}
-                   
-                  >
-                    Comprar
-                  </button>
+                  <Link href={`/produto/${produto.id}`} className="btn w-100 mt-auto fw-bold"
+                    style={{ backgroundColor: "#000000", color: "#FF7A30", textDecoration: "none" }}>
+                    Ver Mais
+                  </Link>
 
 
                 </div>

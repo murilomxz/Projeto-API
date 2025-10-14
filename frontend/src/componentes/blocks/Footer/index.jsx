@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      className="text-light pt-5 pb-3 mt-5"
+      className="text-light pt-5 pb-3  f"
       style={{ backgroundColor: "#000000" }}
     >
       <div className="container">
