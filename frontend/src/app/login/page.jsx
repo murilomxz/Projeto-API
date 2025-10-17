@@ -32,13 +32,6 @@ export default function Login() {
         className="form-signin bg-white p-5 rounded-4 shadow-sm"
         style={{ width: "100%", maxWidth: "400px", borderColor: "#FF7A30", borderRadius: "5px" }}
       >
-        <img
-          className="mb-4 mx-auto d-block"
-          src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-          alt="Logo"
-          width={72}
-          height={57}
-        />
         <h1 className="h3 mb-3 fw-normal text-center fw-bold">Login</h1>
 
         <div className="form-floating mb-3">
@@ -86,7 +79,17 @@ export default function Login() {
             Cadastre-se
           </Link>
         </div>
+        <div className="d-flex flex-column gap-3 mt-3">
+  <button className="btn btn-light fw-bold d-flex align-items-center justify-content-center gap-2">
+    <i className="bi bi-google"></i> Google
+  </button>
+  <button className="btn btn-primary fw-bold d-flex align-items-center justify-content-center gap-2">
+    <i className="bi bi-facebook"></i> Facebook
+  </button>
+</div>
+
       </form>
+      
     </main>
   );
 }

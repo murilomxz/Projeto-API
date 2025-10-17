@@ -38,7 +38,7 @@ export default function Produto() {
               <h2 className="card-title text-center mt-3" style={{ color: "#FF7A30" }}>
                 {produto.produto}
               </h2>
-              <p className="card-text text-white mt-auto fs-5">{produto.descricao}</p>
+              <p className="card-text text-white mt-auto fs-5 ">{produto.descricao}</p>
               <div className="d-flex justify-content-between mt-auto">
                 <button className="btn fw-bold" style={{
                   background: "white",
@@ -47,6 +47,7 @@ export default function Produto() {
                 <h4 className="text-end mt-auto" style={{ color: "#FF7A30" }}>
                   R$ {Number(produto.preco).toFixed(2)}
                 </h4></div>
+                
             </div>
           </div>
         </div>

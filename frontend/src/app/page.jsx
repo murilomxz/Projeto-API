@@ -1,6 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import "./globals.css";
 import Link from "next/link";
+
 
 
 
@@ -43,11 +44,11 @@ export default async function Home() {
       </div>
 
       <div className="container my-5">
-        <h1 className="text-center">Produtos Em Destaque</h1>
-        <div className="row g-4 justify-content-center" id="produtos">
+        <h1 className="text-center fw-bold mb-3 p-5 ">Produtos Em Destaque</h1>
+        <div className="row g-4 justify-content-center mb-5 " id="produtos">
           {produtos.map((produto) => (
             <div key={produto.id} className="col-12 col-sm-6 col-md-4 col-lg-4" style={{ maxWidth: "350px" }}>
-              <div className="card h-100 shadow-sm border-0 rounded-4">
+              <div className="card h-100 shadow-sm border-0 rounded-4 ">
                 <div className="ratio ratio-1x1">
                   <img
                     src={produto.imagem}
@@ -59,7 +60,7 @@ export default async function Home() {
 
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title fw-bold text-center mb-3">{produto.produto}</h5>
-                  <p className="card-text text-muted small flex-grow-1 text-center ">
+                  <p className="card-text text-muted small flex-grow-1 text-center text-truncate ">
                     {produto.descricao}
                   </p>
 
@@ -67,10 +68,10 @@ export default async function Home() {
                     R$ {Number(produto.preco).toFixed(2)}
                   </p>
 
-
-                  <Link href={`/produto/${produto.id}`} className="btn w-100 mt-auto fw-bold"
+          
+                  <Link href={`/produto/${produto.id}`} className="btn w-100  fw-bold text-center test"
                     style={{ backgroundColor: "#000000", color: "#FF7A30", textDecoration: "none" }}>
-                    Ver Mais
+                    Ver Mais <i className="bi bi-arrow-right"></i>
                   </Link>
 
 
