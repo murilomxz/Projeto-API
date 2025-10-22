@@ -13,7 +13,7 @@ export default function Sobre() {
       
             <div className="col-md-6 text-center mb-4 mb-md-0">
               <img
-                src="/img/sobre.jpg"
+                src="/imagens/placa_epis_trabalho_em_altura.webp"
                 alt="Equipe da empresa"
                 className="img-fluid rounded shadow"
                 style={{ maxHeight: "350px", objectFit: "cover" }}
@@ -82,9 +82,13 @@ export default function Sobre() {
             <div className="col-md-4 mb-4">
               <div className="card border-0 shadow-sm">
                 <img
-                  src="https://thvnext.bing.com/th/id/OIP.z1YYkhwNUvuguaRfYS-xXAHaF6?w=199&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1"
+                  src="https://img.freepik.com/fotos-gratis/industria-de-mulher-trabalhador-retrato-vestindo-uniforme-de-seguranca-e-oculos-de-protecao-em-pe-sobre-fundo-branco_114579-78228.jpg"
                   className="card-img-top rounded-top" 
-                  alt="Membro da equipe" 
+                  alt="Membro da equipe"  style={{
+                    height: "300px",
+                    width: "100%",
+                    objectFit: "cover",
+                  }}
                 />
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Ana Maria Braga</h5>
@@ -96,9 +100,14 @@ export default function Sobre() {
             <div className="col-md-4 mb-4">
               <div className="card border-0 shadow-sm">
                 <img
-                  src="https://thvnext.bing.com/th/id/OIP.VYMYeWaiCqae6IvPtUYu_QHaGI?w=209&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3&ucfimg=1"
+                  src="https://tse3.mm.bing.net/th/id/OIP.pBNrPAfEchA6A0PUI66Q0gHaE7?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
                   className="card-img-top rounded-top"
-                  alt="Membro da equipe" 
+                  alt="Membro da equipe"    style={{
+                    height: "300px",
+                    width: "100%",
+                    objectFit: "cover",
+                  }}
+                 
                 />
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Ronaldo fenômeno</h5>
@@ -110,9 +119,14 @@ export default function Sobre() {
             <div className="col-md-4 mb-4">
               <div className="card border-0 shadow-sm">
                 <img
-                  src="/img/pessoa3.jpg"
+                  src="https://img.freepik.com/fotos-gratis/jovem-engenheiro-de-uniforme-segurando-a-prancheta-e-apontando-para-cima-vista-frontal_176474-21297.jpg"
                   className="card-img-top rounded-top"
-                  alt="Membro da equipe"
+                  alt="Membro da equipe"   style={{
+                    height: "300px",
+                    width: "100%",
+                    objectFit: "cover",
+                  }}
+                
                 />
                 <div className="card-body">
                   <h5 className="card-title fw-bold">Fausto Silva</h5>

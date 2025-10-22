@@ -33,8 +33,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contato" className="text-decoration-none" style={{ color: "#E9E3DF" }}>
-                  Contato
+                <Link href="/login" className="text-decoration-none" style={{ color: "#E9E3DF" }}>
+                  Login
                 </Link>
               </li>
             </ul>

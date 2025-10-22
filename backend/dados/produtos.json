@@ -4,41 +4,175 @@
     "produto": "Talabarte de Posicionamento em Corda Steelflex - Mod. STF-CQTL0548",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/57/3657_talabarte-de-posicionamento-em-corda-steelflex-mod-stf-cqtl0548-1311-1_z2_637925443270398638.webp",
     "descricao": "Talabarte de segurança de posicionamento, confeccionado em corda de 14mm em poliamida com proteção sintética e regulador em aço, ideal para trabalho em altura.",
-    "preco": 170
+    "preco": 170.99,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "STF-CQTL0548",
+    "categoria": "Talabartes"
   },
   {
     "id": 2,
     "produto": "Cinto Paraquedista 4 Pontos Steelflex Antichamas - Mod. STF-CQCT4321",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/35/89/3589_cinto-paraquedista-4-pontos-steelflex-antichamas-mod-stf-cqct4321-837193-1_z2_638924228363764847.webp",
     "descricao": "Cinto de segurança tipo paraquedista com cinco pontos de conexão, ideal para trabalhos em altura e espaços confinados. Fabricado em poliéster de alta resistência.",
-    "preco": 295
+    "preco": 295,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "STF-CQCT4321",
+    "categoria": "Cintos de Segurança"
   },
   {
     "id": 3,
     "produto": "Capacete de Segurança Steelflex Turtle Aba Frontal Azul Escuro - Com 10 Unidades",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/90/98/9098_casco-turtle-capacete-de-seguranca-steelflex-aba-frontal-azul-escuro-steelflex-mod-stf-cpct10220-com-10-unidades_m1_638230516703828760.webp",
-    "descricao": "Capacete de segurança para uso na indústria, tipo II, Classe B, incluindo trabalhos com energia elétrica. Projetado em conjunto com a suspensão, para limitar o risco de objetos que podem cair sobre a cabeça, reduzindo a força de impacto e penetração na parte superior do casco, de acordo com a norma NBR 8221:2003.",
-    "preco": 524.33
+    "descricao": "Capacete de segurança para uso na indústria, tipo II, Classe B, incluindo trabalhos com energia elétrica.",
+    "preco": 524.33,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "STF-CPCT10220",
+    "categoria": "Capacetes"
   },
   {
     "id": 4,
     "produto": "Trava Quedas Retrátil 5m - Carbografite",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/11/22/11220_trava-quedas-retratil-duplo-steelflex_m3_638878499520454100.webp",
     "descricao": "Trava quedas retrátil com fita de 5 metros, carcaça em ABS e mosquetão de aço. Permite movimentação livre e bloqueio automático em caso de queda.",
-    "preco": 890
+    "preco": 890,
+    "disponibilidade": "Em estoque",
+    "marca": "Carbografite",
+    "modelo": "Retrátil 5m",
+    "categoria": "Trava Quedas"
   },
   {
     "id": 5,
     "produto": "Corda de Segurança Poliamida 12MM Rolo C/50M NR18 - Plasmodia",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/15/3615_corda-de-seguranca-poliamida-12mm-rolo-c-50m-nr18-plasmodia-1215-1_m1_637911002040050669.webp",
-    "descricao": "Constituído em trançado triplo e alma central. Trançado externo em multiflamento de Poliamida, trançado intermediário e o alerta visual na cor amarela em multiflamento de polipropileno ou poliamida na cor amarela com o mínimo de 50% de identificação, não podendo ultrapassar 10% da densidade linear. Trançado interno em multiflamento de poliamida e alma central torcida em multifilamento de poliamida.",
-    "preco": 213.4
+    "descricao": "Constituído em trançado triplo e alma central. Trançado externo em multifilamento de poliamida, ideal para uso industrial.",
+    "preco": 213.4,
+    "disponibilidade": "Em estoque",
+    "marca": "Plasmodia",
+    "modelo": "NR18",
+    "categoria": "Cordas"
   },
   {
     "id": 6,
     "produto": "Cinto Paraquedista Athenas 4 Pontos com Regulagem Total AT7030 com Refletivo",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/03/3603_cinto-paraquedista-athenas-4-pontos-com-regulagem-total-at7030-com-refletivo-835502-1_s3_638924306032089953.webp",
     "descricao": "Trabalho em altura na retenção de queda, posicionamento e suspensão (espaço confinado).",
-    "preco": 210
+    "preco": 210,
+    "disponibilidade": "Em estoque",
+    "marca": "Athenas",
+    "modelo": "AT7030",
+    "categoria": "Cintos de Segurança"
+  },
+  {
+    "id": 7,
+    "produto": "Luva de Segurança Nitrílica Azul Steelflex - CA 41344",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/90/14/9014_luva-sensivolk-soft-nitrilico-sem-po-azul-volk-com-10-caixas_z2_638227873872854665.webp",
+    "descricao": "Luva nitrílica resistente a abrasão, ideal para manuseio de produtos químicos leves e manutenção industrial.",
+    "preco": 35,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "Nitrílica Azul",
+    "categoria": "Luvas"
+  },
+  {
+    "id": 8,
+    "produto": "Óculos de Proteção Steelflex Vision Clear Antirrisco - 100 unidades",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/90/27/9027_oculos-de-protecao-sky-smoke-cinza-delta-plus-com-12-unidades_m2_638228642398523539.webp",
+    "descricao": "Óculos de segurança com lentes de policarbonato incolor, tratamento antirrisco e proteção UV.",
+    "preco": 250,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "Vision Clear",
+    "categoria": "Óculos de Proteção"
+  },
+  {
+    "id": 9,
+    "produto": "Protetor Auricular Plug Siliconado Steelflex - Cordão PVC - 100 unidades",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/91/32/9132_protetor-auditivo-espuma-moldavel-1100-sem-cordao-3m-com-100-unidades_z1_638233940414811772.webp",
+    "descricao": "Protetor auricular reutilizável com cordão, ideal para ambientes com ruído contínuo. Nível de atenuação 14 dB.",
+    "preco": 90,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "Plug Siliconado",
+    "categoria": "Protetores Auriculares"
+  },
+  {
+    "id": 10,
+    "produto": "Respirador Aero 2 Descartável PFF2 Branco GVS - 100 unidadas",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/89/97/8997_respirador-aero-2-descartavel-pff2-branco-gvs-caixa-com-100-unidadas_z1_638227753346066984.webp",
+    "descricao": "A Máscara Aero 2 GVS tem melhor vedação, em função da sua inovadora conformação, obtida através de um sistema de desenho eletrônico para corte de tecidos.",
+    "preco": 189.99,
+    "disponibilidade": "Em estoque",
+    "marca": "GVS",
+    "modelo": "Aero 2",
+    "categoria": "Respiradores"
+  },
+  {
+    "id": 11,
+    "produto": "Cinto 2 Pontos Steelflex CA 41659 + Talabarte Y com Absorvedor | Kit Trabalho em Altura",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/11/51/11514_kit-trabalho-em-altura-steelflex-cinto-2-pontos-ca-41659-talabarte-y_m3_638924030290016994.webp",
+    "descricao": "Uso por pessoa treinada e capacitada. O cinturão deve ser inspecionado totalmente antes de cada uso. Limpeza: pano ou escova macia. Para limpeza intensiva, lavar entre 30 °C e 60 °C com detergente neutro (pH 7). Secar naturalmente, longe de calor direto.",
+    "preco": 220,
+    "disponibilidade": "Esgotado",
+    "marca": "Steelflex",
+    "modelo": "CA 41659",
+    "categoria": "Kits de Altura"
+  },
+  {
+    "id": 12,
+    "produto": "Travas Quedas para Corda Athenas 7070 AC 12MM Alça Carbono",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/37/17/3717_travas-quedas-para-corda-athenas-7070-ac-12mm-alca-carbono-1341-1_z1_637910811772438438.webp",
+    "descricao": "Dispositivo Trava Quedas com extensor para corda de 12 mm; Possui travas internas arredondadas; Conector classe T (abertura de 17 mm) utilizado no ponto de conexão dorsal ou peitoral do cinturão tipo paraquedista/abdominal.",
+    "preco": 200,
+    "disponibilidade": "Em estoque",
+    "marca": "Athenas",
+    "modelo": "7070 AC",
+    "categoria": "Trava Quedas"
+  },
+  {
+    "id": 13,
+    "produto": "Colete Refletivo de Segurança Laranja Neon - 100 unidades",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/91/41/9141_colete-refletivo-laranja-com-bolso-steelflex-stf-vacl91030-com-10-unidades_m1_638235661875653134.webp",
+    "descricao": "Colete refletivo com faixas de alta visibilidade, ideal para obras e sinalização viária noturna.",
+    "preco": 199,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "STF-VACL91030",
+    "categoria": "Coletes"
+  },
+  {
+    "id": 14,
+    "produto": "Mosquetão em Alumínio Tripla Trava Automática Delta Plus - Kit 2 Peças",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/35/3635_mosquetao-em-aluminio-tripla-trava-automatica-delta-plus-kit-2-pecas-836766-1_z1_637961688476996049.webp",
+    "descricao": "Kit 2 peças - Mosquetão dupla trava em alumínio com bloqueio automático, abertura de 22 mm, carga de ruptura 25 KN.",
+    "preco": 110,
+    "disponibilidade": "Em estoque",
+    "marca": "Delta Plus",
+    "modelo": "Tripla Trava Automática",
+    "categoria": "Mosquetões"
+  },
+  {
+    "id": 15,
+    "produto": "Mosquetão de Aço Trava Dupla Steelflex 22KN",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/31/3631_mosquetao-em-aco-dupla-trava-abertura-d-steelflex-stf-cqcn0687-883-1_z2_637925445084972981.webp",
+    "descricao": "Mosquetão em aço galvanizado com trava dupla automática, resistência de 22KN. Ideal para talabartes e cintos.",
+    "preco": 48,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "STF-CQCN0687",
+    "categoria": "Mosquetões"
+  },
+  {
+    "id": 16,
+    "produto": "Protetor Solar Episafe FPS 60 - 120g - 12 unidades",
+    "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/90/02/9002_protetor-solar-com-repelente-nutriex-fator-60-120g-com-12-unidades_z2_638227818729572971.webp",
+    "descricao": "Protetor solar de uso profissional, resistente à água e suor, indicado para trabalhadores a céu aberto.",
+    "preco": 243.28,
+    "disponibilidade": "Esgotado",
+    "marca": "Episafe",
+    "modelo": "FPS 60",
+    "categoria": "Protetores Solares"
   }
 ]

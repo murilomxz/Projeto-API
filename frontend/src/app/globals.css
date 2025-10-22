@@ -65,4 +65,13 @@ footer a:hover {
   flex: 1; 
   
 }
+.botaoprodutos:hover{
+  transform: translateY(-10px);
+}
+
+.botaovermais:hover {
+  background-color: #FF7A30 !important;
+  color: #000 !important;
+  transform: scale(1.05); 
+}
 

@@ -2,27 +2,29 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 
-
-
-
-
 export default async function Home() {
   const produtos = await (await fetch("http://localhost:3000/produtos")).json();
   console.log(produtos);
 
+
+  const produtosEmDestaque = produtos.slice(0, 6);
 
   return (
     <>
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <Link href="#produtos" ><img src="/imagens/Banner.png" className="d-block w-100" alt="..." /></Link>
+            <Link href="#produtos">
+              <img src="/imagens/Banner.png" className="d-block w-100" alt="..." />
+            </Link>
           </div>
           <div className="carousel-item">
-            <Link href="#produtos" ><img src="/imagens/Banner2.png" className="d-block w-100" alt="..." /></Link>
+            <Link href="#produtos">
+              <img src="/imagens/Banner2.png" className="d-block w-100" alt="..." />
+            </Link>
           </div>
-
         </div>
+
         <button
           className="carousel-control-prev"
           type="button"
@@ -32,6 +34,7 @@ export default async function Home() {
           <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="visually-hidden">Previous</span>
         </button>
+
         <button
           className="carousel-control-next"
           type="button"
@@ -44,11 +47,16 @@ export default async function Home() {
       </div>
 
       <div className="container my-5">
-        <h1 className="text-center fw-bold mb-3 p-5 ">Produtos Em Destaque</h1>
-        <div className="row g-4 justify-content-center mb-5 " id="produtos">
-          {produtos.map((produto) => (
-            <div key={produto.id} className="col-12 col-sm-6 col-md-4 col-lg-4" style={{ maxWidth: "350px" }}>
-              <div className="card h-100 shadow-sm border-0 rounded-4 ">
+        <h1 className="text-center fw-bold mb-3 p-5">Produtos em Destaque</h1>
+
+        <div className="row g-4 justify-content-center mb-5" id="produtos">
+          {produtosEmDestaque.map((produto) => (
+            <div
+              key={produto.id}
+              className="col-12 col-sm-6 col-md-4 col-lg-4"
+              style={{ maxWidth: "350px" }}
+            >
+              <div className="card h-100 shadow-sm border-0 rounded-4">
                 <div className="ratio ratio-1x1">
                   <img
                     src={produto.imagem}
@@ -59,8 +67,11 @@ export default async function Home() {
                 </div>
 
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title fw-bold text-center mb-3">{produto.produto}</h5>
-                  <p className="card-text text-muted small flex-grow-1 text-center text-truncate ">
+                  <h5 className="card-title fw-bold text-center mb-3">
+                    {produto.produto}
+                  </h5>
+
+                  <p className="card-text text-muted small flex-grow-1 text-center text-truncate">
                     {produto.descricao}
                   </p>
 
@@ -68,19 +79,44 @@ export default async function Home() {
                     R$ {Number(produto.preco).toFixed(2)}
                   </p>
 
-          
-                  <Link href={`/produto/${produto.id}`} className="btn w-100  fw-bold text-center test"
-                    style={{ backgroundColor: "#000000", color: "#FF7A30", textDecoration: "none" }}>
+                  <Link
+                    href={`/produto/${produto.id}`}
+                    className="btn w-100 fw-bold text-center botaovermais"
+                    style={{
+                      backgroundColor: "#000000",
+                      color: "#FF7A30",
+                      textDecoration: "none",
+                    }}
+                  >
                     Ver Mais <i className="bi bi-arrow-right"></i>
                   </Link>
-
-
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div>
+        <div className="text-center mt-4">
+  <Link
+    href="/produtos"
+    className="btn fw-bold px-4 py-2 d-inline-flex align-items-center justify-content-center botaoprodutos"
+    style={{
+      backgroundColor: "#000000",
+      color: "#FF7A30",
+      borderRadius: "8px",
+      textDecoration: "none",
+      gap: "8px",
+      transition: "0.3s",
+    }}
+   
+  >
+    <i className="bi bi-search me-1"></i>
+    Ver Todos os Produtos
+  </Link>
+</div>
+        </div>
+
+
+
     </>
   );
 }
