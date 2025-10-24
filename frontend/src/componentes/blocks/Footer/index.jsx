@@ -32,11 +32,12 @@ export default function Footer() {
                   Sobre
                 </Link>
               </li>
-              <li>
-                <Link href="/login" className="text-decoration-none" style={{ color: "#E9E3DF" }}>
-                  Login
-                </Link>
-              </li>
+              <li className="nav-item">
+              <Link href="/contato" className="nav-link text-light">
+               Contato
+              </Link>
+            </li>
+            
             </ul>
           </div>      
           

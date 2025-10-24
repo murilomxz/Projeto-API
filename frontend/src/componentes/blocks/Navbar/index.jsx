@@ -49,6 +49,11 @@ export default function Navbar() {
                 Sobre
               </Link>
             </li>
+            <li className="nav-item">
+              <Link href="/contato" className="nav-link text-light">
+               Contato
+              </Link>
+            </li>
             <li className="nav-item ms-lg-3">
               <Link
                 href="/login"

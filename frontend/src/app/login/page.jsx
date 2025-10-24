@@ -16,7 +16,7 @@ export default function Login() {
   
     if (email === "Admin@gmail.com" && senha === "123") {
       alert("Login de administrador realizado com sucesso!");
-      router.push("/admin"); 
+      router.push("/dashboard"); 
     } else {
         setEmail("")
         setSenha("")
@@ -41,6 +41,7 @@ export default function Login() {
             id="floatingInput"
             placeholder="name@example.com"
             value={email}
+            required
             onChange={(e) => setEmail(e.target.value)}
           />
           <label htmlFor="floatingInput">E-mail</label>
@@ -53,6 +54,7 @@ export default function Login() {
             id="floatingPassword"
             placeholder="Senha"
             value={senha}
+            required
             onChange={(e) => setSenha(e.target.value)}
           />
           <label htmlFor="floatingPassword">Senha</label>

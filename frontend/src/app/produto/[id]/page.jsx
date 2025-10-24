@@ -28,7 +28,7 @@ export default function ProdutoPage() {
     );
 
   return (
-    <main style={{ backgroundColor: "#fff", color: "#000", padding: "4rem 2rem" }}>
+    <main style={{ backgroundColor: "#fff", color: "#000", padding: "4rem 2rem", flex: "1" }}>
       <div className="container-fluid">
         <div className="row g-5 align-items-start">
    
@@ -36,8 +36,8 @@ export default function ProdutoPage() {
             <img
               src={produto.imagem}
               alt={produto.produto}
-              className="img-fluid rounded shadow"
-              style={{ maxHeight: "420px", width: "auto", objectFit: "contain" }}
+              className="img-fluid rounded"
+              style={{ maxHeight: "600px", width: "auto", objectFit: "cover" }}
             />
           </div>
 
