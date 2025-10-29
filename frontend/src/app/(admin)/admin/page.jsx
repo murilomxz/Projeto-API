@@ -19,7 +19,7 @@ export default function Admin() {
 
   const carregarProdutos = async () => {
     try {
-      const produtos = await (await fetch("http://localhost:3000/produtos")).json();
+      const produtos = await (await fetch("http://localhost:3001/produtos")).json();
       setProdutos(produtos);
     } catch (error) {
       console.error("Erro ao carregar produtos:", error);
@@ -32,7 +32,7 @@ export default function Admin() {
 
   const adicionarProduto = async (e) => {
     e.preventDefault();
-    await fetch("http://localhost:3000/produtos", {
+    await fetch("http://localhost:3001/produtos", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Authorization": "Admin@gmail.com" },
       body: JSON.stringify(novoProduto),
@@ -52,7 +52,7 @@ export default function Admin() {
 
   const deletarProduto = async (id) => {
     if (confirm("Deseja realmente excluir este produto?")) {
-      await fetch(`http://localhost:3000/produtos/${id}`, {
+      await fetch(`http://localhost:3001/produtos/${id}`, {
         method: "DELETE",
         headers: { "Authorization": "Admin@gmail.com" },
       });
@@ -61,7 +61,7 @@ export default function Admin() {
   };
 
   const salvarEdicao = async (id) => {
-    await fetch(`http://localhost:3000/produtos/${id}`, {
+    await fetch(`http://localhost:3001/produtos/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json", "Authorization": "Admin@gmail.com" },
       body: JSON.stringify(editando),

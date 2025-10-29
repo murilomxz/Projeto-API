@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default async function Produtos() {
 
-  const produtos = await (await fetch("http://localhost:3000/produtos")).json();
+  const produtos = await (await fetch("http://localhost:3001/produtos")).json();
 
   return (
     <>

@@ -13,7 +13,7 @@ export default function ProdutoPage() {
 
   useEffect(() => {
     if (!id) return;
-    fetch(`http://localhost:3000/produtos/${id}`)
+    fetch(`http://localhost:3001/produtos/${id}`)
       .then((res) => res.json())
       .then((data) => setProduto(data))
       .catch((err) => console.error("Erro ao carregar produto:", err));

@@ -100,7 +100,7 @@ export default function Sobre() {
             <div className="col-md-4 mb-4">
               <div className="card border-0 shadow-sm">
                 <img
-                  src="https://tse3.mm.bing.net/th/id/OIP.pBNrPAfEchA6A0PUI66Q0gHaE7?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                  src="https://tse4.mm.bing.net/th/id/OIP.AQfZL40cNnAVDIZeFs_E6AHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
                   className="card-img-top rounded-top"
                   alt="Membro da equipe"    style={{
                     height: "300px",

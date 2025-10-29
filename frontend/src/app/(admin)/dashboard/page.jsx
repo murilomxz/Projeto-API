@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css"; 
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Dashboard() {
   const [produtos, setProdutos] = useState([]);
 
-  
+
   const usuarios = [
     { id: 1, nome: "João" },
     { id: 2, nome: "Maria" },
@@ -22,11 +22,11 @@ export default function Dashboard() {
     { id: 3, total: 1200, status: "pendente" },
   ];
 
-  const receitaTotal = pedidos.reduce((acc, pedido) => acc + pedido.total, 0);
+  const receitaTotal = 5000
 
   const carregarProdutos = async () => {
     try {
-      const data = await (await fetch("http://localhost:3000/produtos")).json();
+      const data = await (await fetch("http://localhost:3001/produtos")).json();
       setProdutos(data);
     } catch (error) {
       console.error("Erro ao carregar produtos:", error);
@@ -40,28 +40,25 @@ export default function Dashboard() {
   return (
     <main style={{ flex: "1", backgroundColor: "#f8f9fa" }}>
       <div className="container py-5">
-      
-        <div className="d-flex justify-content-between align-items-center mb-5">
-          <div>
-            <h1 className="fw-bold display-5" style={{ color: "#FF7A30" }}>
-              Painel do Administrador
-            </h1>
-            <p className="text-muted fs-5 mb-0">Bem-vindo de volta!</p>
-          </div>
-          <div className="d-flex gap-3">
-            <button className="btn btn-outline-dark btn-lg rounded-pill">
-              <i className="bi bi-bell me-2"></i>Notificações
-            </button>
-            <Link href="/admin">
-              <button
-                className="btn btn-lg fw-bold text-white rounded-pill"
-                style={{ backgroundColor: "#FF7A30" }}
-              >
-                <i className="bi bi-gear me-2"></i>Gerenciar Produtos
-              </button>
-            </Link>
-          </div>
-        </div>
+      <div className="row align-items-center mb-5">
+  <div className="col-md-6">
+    <h1 className="fw-bold display-5" style={{ color: "#FF7A30" }}>
+      Painel do Administrador
+    </h1>
+    <p className="text-muted fs-5 mb-0">Bem-vindo de volta!</p>
+  </div>
+
+  <div className="col-md-6 text-md-end mt-4 mt-md-0">
+    <Link href="/admin">
+      <button
+        className="btn btn-lg fw-bold text-white rounded-pill shadow-sm"
+        style={{ backgroundColor: "#FF7A30" }}
+      >
+        <i className="bi bi-gear me-2"></i> Gerenciar Produtos
+      </button>
+    </Link>
+  </div>
+</div>
 
         <div className="row g-4 mb-5">
           {[
@@ -111,7 +108,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          
+
           <div className="col-12 col-lg-4">
             <div className="card border-0 shadow-lg rounded-4">
               <div className="card-header bg-white border-0 p-4">
@@ -123,17 +120,13 @@ export default function Dashboard() {
                     <i className="bi bi-plus-circle me-2"></i> Novo Produto
                   </button>
                 </Link>
-                <Link href="#">
-                  <button className="btn btn-outline-dark btn-lg rounded-pill">
-                    <i className="bi bi-people me-2"></i> Gerenciar Usuários
-                  </button>
-                </Link>
-                <Link href="#">
+
+                <Link href="/admin">
                   <button className="btn btn-outline-dark btn-lg rounded-pill">
                     <i className="bi bi-receipt me-2"></i> Gerenciar Pedidos
                   </button>
                 </Link>
-                <Link href="#">
+                <Link href="/dashboard">
                   <button className="btn btn-dark fw-bold btn-lg rounded-pill">
                     <i className="bi bi-graph-up me-2"></i> Relatórios
                   </button>
@@ -149,7 +142,7 @@ export default function Dashboard() {
             <h5 className="fw-bold mb-0" style={{ color: "#FF7A30" }}>Alertas de Estoque Crítico (EPIs de Altura)</h5>
           </div>
           <div className="card-body p-4">
-            {produtos.filter(p => p.disponibilidade ==="Em estoque").length === 0 ? (
+            {produtos.filter(p => p.disponibilidade === "Em estoque").length === 0 ? (
               <p className="text-success fw-bold">Todos os produtos estão com estoque seguro.</p>
             ) : (
               produtos.filter(p => p.disponibilidade === "Esgotado").map(produto => (

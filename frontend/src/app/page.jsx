@@ -3,7 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 
 export default async function Home() {
-  const produtos = await (await fetch("http://localhost:3000/produtos")).json();
+  const produtos = await (await fetch("http://localhost:3001/produtos")).json();
   console.log(produtos);
 
 

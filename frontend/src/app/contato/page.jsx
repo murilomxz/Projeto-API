@@ -68,24 +68,7 @@ export default function contato(){
       </div>
     </div>
    
-    <div className="row text-center mt-5 gy-4">
-      <div className="col-md-3 col-6">
-        <i className="bi bi-telephone-fill fs-4 contact-icon" />
-        <p className="mb-0"> +55 (11) 99999-999</p>
-      </div>
-      <div className="col-md-3 col-6">
-        <i className="bi bi-envelope-fill fs-4 contact-icon" />
-        <p className="mb-0">contato@epialtura.com.br</p>
-      </div>
-      <div className="col-md-3 col-6">
-        <i className="bi bi-instagram fs-4 contact-icon" />
-        <p className="mb-0">@epialtura</p>
-      </div>
-      <div className="col-md-3 col-6">
-        <i className="bi bi-facebook fs-4 contact-icon" />
-        <p className="mb-0">@EPialturaloja</p>
-      </div>
-    </div>
+    
   </section>
   </main>
 </>
