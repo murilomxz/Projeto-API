@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Admin() {
+  const router = useRouter(); // ✅ Adicionado
   const [produtos, setProdutos] = useState([]);
   const [novoProduto, setNovoProduto] = useState({
     produto: "",
@@ -72,6 +74,17 @@ export default function Admin() {
 
   return (
     <div className="container my-5">
+
+      <div className="mb-4">
+        <button
+          className="btn btn-outline-dark fw-bold px-4 py-2"
+          style={{ borderRadius: "10px", borderWidth: "2px" }}
+          onClick={() => router.back()}
+        >
+          Voltar
+        </button>
+      </div>
+
       <h1 className="text-center mb-5 fw-bold" style={{ color: "#FF7A30" }}>
         Painel do Administrador
       </h1>

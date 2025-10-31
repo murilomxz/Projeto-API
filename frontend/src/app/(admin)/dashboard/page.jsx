@@ -42,6 +42,7 @@ export default function Dashboard() {
       <div className="container py-5">
       <div className="row align-items-center mb-5">
   <div className="col-md-6">
+    
     <h1 className="fw-bold display-5" style={{ color: "#FF7A30" }}>
       Painel do Administrador
     </h1>

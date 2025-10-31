@@ -42,6 +42,11 @@ router.post('/', Autenticar, (req, res) => {
             const preco = req.body.preco
             const imagem = req.body.imagem
             const produto = req.body.produto
+            const disponibilidade = req.body.disponibilidade
+            const marca = req.body.marca
+            const modelo = req.body.modelo
+            const categoria = req.body.categoria
+
              if(!req.body){
                 res.status(400).send("O Produto precisa de informações!");
             }
@@ -58,7 +63,11 @@ router.post('/', Autenticar, (req, res) => {
                 produto: produto,
                 imagem: imagem,
                 descricao: descricao,
-                preco: preco
+                preco: preco,
+                disponibilidade: disponibilidade,
+                marca: marca,
+                modelo: modelo,
+                categoria: categoria
             })
            
                 fs.writeFile('./dados/produtos.json', JSON.stringify(produtos, null, 2), (err) => {
@@ -110,7 +119,8 @@ router.put('/:id', Autenticar, (req, res) => {
                 return res.status(400).send("O Produto precisa de informações!");
             }
 
-            const { produto, imagem, descricao, preco } = req.body;
+            const { produto, imagem, descricao, preco, disponibilidade, marca, modelo, categoria } = req.body;
+
 
             if (index === -1) {
                 return res.status(404).send("Produto não encontrado! Verifique o ID.");
@@ -134,7 +144,11 @@ router.put('/:id', Autenticar, (req, res) => {
                 produto,
                 imagem,
                 descricao,
-                preco: Number(preco)
+                preco: Number(preco),
+                disponibilidade,
+                marca,
+                modelo,
+                categoria
             };
 
             fs.writeFile('./dados/produtos.json', JSON.stringify(produtos, null, 2), (err) => {

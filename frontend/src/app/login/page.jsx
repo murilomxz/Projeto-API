@@ -26,7 +26,7 @@ export default function Login() {
  
 
   return (
-    <main className="d-flex justify-content-center align-items-center " style={{flex: "1", height: "100vh"}}>
+    <main className="d-flex justify-content-center align-items-center " style={{flex: "1"}}>
       <form
         onSubmit={handleSubmit}
         className="form-signin bg-white p-5 rounded-4 shadow-sm"

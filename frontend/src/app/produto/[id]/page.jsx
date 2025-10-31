@@ -27,11 +27,13 @@ export default function ProdutoPage() {
       </div>
     );
 
+  const total = (produto.preco * quantidade).toFixed(2);
+
   return (
     <main style={{ backgroundColor: "#fff", color: "#000", padding: "4rem 2rem", flex: "1" }}>
       <div className="container-fluid">
         <div className="row g-5 align-items-start">
-   
+
           <div className="col-md-5 text-center">
             <img
               src={produto.imagem}
@@ -41,7 +43,6 @@ export default function ProdutoPage() {
             />
           </div>
 
-        
           <div className="col-md-7">
             <h1 className="fw-bold mb-3" style={{ color: "#FF7A30" }}>
               {produto.produto}
@@ -65,10 +66,16 @@ export default function ProdutoPage() {
               <p><strong>Código:</strong> {produto.id}</p>
               <p><strong>Marca:</strong> {produto.marca || "Não informado"}</p>
               <p><strong>Modelo:</strong> {produto.modelo || "Não informado"}</p>
-              <p><strong>Disponibilidade:</strong> {produto.disponibilidade}</p>
+              <p>
+                <strong>Disponibilidade:</strong>{" "}
+                <span className={produto.disponibilidade === "Em estoque" ? "text-success" : "text-danger"}>
+                  {produto.disponibilidade}
+                </span>
+
+              </p>
             </div>
 
-    
+
             <div className="row mb-4">
               <div className="col-md-6 mb-3">
                 <label htmlFor="cep" className="form-label">
@@ -102,7 +109,12 @@ export default function ProdutoPage() {
               </div>
             </div>
 
-       
+
+            <div className="mb-4">
+              <h4>Total: <span className="text-success">R$ {total}</span></h4>
+            </div>
+
+
             <div className="d-flex flex-wrap gap-3">
               <button
                 className="btn fw-bold px-5 py-2"

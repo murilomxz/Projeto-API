@@ -5,7 +5,7 @@
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/36/57/3657_talabarte-de-posicionamento-em-corda-steelflex-mod-stf-cqtl0548-1311-1_z2_637925443270398638.webp",
     "descricao": "Talabarte de segurança de posicionamento, confeccionado em corda de 14mm em poliamida com proteção sintética e regulador em aço, ideal para trabalho em altura.",
     "preco": 170.99,
-    "disponibilidade": "Em estoque",
+    "disponibilidade": "Esgotado",
     "marca": "Steelflex",
     "modelo": "STF-CQTL0548",
     "categoria": "Talabartes"
@@ -26,7 +26,11 @@
     "produto": "Capacete de Segurança Steelflex Turtle Aba Frontal Azul Escuro - Com 10 Unidades",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/90/98/9098_casco-turtle-capacete-de-seguranca-steelflex-aba-frontal-azul-escuro-steelflex-mod-stf-cpct10220-com-10-unidades_m1_638230516703828760.webp",
     "descricao": "Capacete de segurança para uso na indústria, tipo II, Classe B, incluindo trabalhos com energia elétrica.",
-    "preco": 524.33
+    "preco": 524.33,
+    "disponibilidade": "Em estoque",
+    "marca": "Steelflex",
+    "modelo": "STF-CQTL456",
+    "categoria": "Capacete de segurança"
   },
   {
     "id": 4,
@@ -110,7 +114,7 @@
     "produto": "Cinto 2 Pontos Steelflex CA 41659 + Talabarte Y com Absorvedor | Kit Trabalho em Altura",
     "imagem": "https://d1ql0a3e3j9mcx.cloudfront.net/Custom/Content/Products/11/51/11514_kit-trabalho-em-altura-steelflex-cinto-2-pontos-ca-41659-talabarte-y_m3_638924030290016994.webp",
     "descricao": "Uso por pessoa treinada e capacitada. O cinturão deve ser inspecionado totalmente antes de cada uso. Limpeza: pano ou escova macia. Para limpeza intensiva, lavar entre 30 °C e 60 °C com detergente neutro (pH 7). Secar naturalmente, longe de calor direto.",
-    "preco": 220,
+    "preco": 220.99,
     "disponibilidade": "Esgotado",
     "marca": "Steelflex",
     "modelo": "CA 41659",
